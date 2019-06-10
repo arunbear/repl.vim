@@ -17,6 +17,6 @@ function! repl#idris#open_repl() abort
     return
   endif
   let l:args                 = printf('%s %s %s', l:repl['repl'], l:repl['opt'], l:module_file)
-  let l:vimshell_interactive = ':VimShellInteractive' . printf("--split='%s'", g:repl_split_command)
-  execute l:vimshell_interactive l:args
+  let l:args = printf('%s %s %s', l:repl['repl'], l:repl['opt'], l:module_file)
+  let l:buf  = term_start(l:args, { 'term_finish': 'close' })
 endfunction
