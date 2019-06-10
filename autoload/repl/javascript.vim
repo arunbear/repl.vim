@@ -17,8 +17,8 @@ function! repl#javascript#open_repl() abort
     call repl#echo_error(printf("You don't have repl: '%s'", l:exec_name))
     return
   endif
-  let l:args                 = printf('%s %s',  l:repl['repl'], l:repl['opt'])
-  let l:vimshell_interactive = ':VimShellInteractive' . printf("--split='%s'", g:repl_split_command)
-  execute l:vimshell_interactive l:args
-  call vimshell#interactive#send('.load ' . l:module_file)
+  let l:args = printf('%s %s',  l:repl['repl'], l:repl['opt'])
+  let l:buf  = term_start(l:args, { 'term_finish': 'close' })
+  call term_sendkeys(buf, '.load ' . l:module_file)
+  call term_sendkeys(buf, "\n")
 endfunction
