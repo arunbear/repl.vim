@@ -62,8 +62,7 @@ and run `:NeoBundleInstall`.
 
 ## Requirements
 
-* [vimshell.vim](https://github.com/Shougo/vimshell.vim)
-* [vimproc.vim](https://github.com/Shougo/vimproc.vim) (vimproc.vim is required by vimshell.vim)
+* Vim 8.1 (or higher) compiled with the terminal feature.
 
 ## Authors
 
