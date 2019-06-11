@@ -52,13 +52,13 @@ Run `:Repl` without saving the code on a file.
 
 ## Installation
 
-Example for [neobundle.vim](https://github.com/Shougo/neobundle.vim)
+Example for [plug.vim](https://github.com/junegunn/vim-plug)
 
 Please add the following line into your .vimrc
 
-    NeoBundle 'ujihisa/repl.vim'
+    Plug 'arunbear/repl.vim'
 
-and run `:NeoBundleInstall`.
+and run `:PlugInstall`.
 
 ## Requirements
 
