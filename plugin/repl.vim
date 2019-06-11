@@ -21,6 +21,10 @@ let g:repl#default_filetype_repl = {
 \   'repl' : 'python',
 \   'opt'  : '-i'
 \ },
+\ 'elixir' : {
+\   'repl' : 'iex',
+\   'opt'  : '-r'
+\ },
 \ 'erlang' : {
 \   'repl' : 'erl',
 \   'opt'  : ''

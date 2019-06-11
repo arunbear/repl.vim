@@ -28,6 +28,8 @@ function! repl#run_repl() abort
     call repl#scheme#open_repl()
   elseif &filetype ==# 'prolog'
     call repl#prolog#open_repl()
+  elseif &filetype ==# 'elixir'
+    call repl#elixir#open_repl()
   else
     call repl#echo_error("Sorry, repl.vim didn't support this filetype")
   endif
