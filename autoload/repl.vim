@@ -26,7 +26,7 @@ function! repl#run_repl() abort
     call repl#idris#open_repl()
   elseif &filetype ==# 'scheme'
     call repl#scheme#open_repl()
-  elseif &filetype ==# 'swiprolog'
+  elseif &filetype ==# 'prolog'
     call repl#prolog#open_repl()
   else
     call repl#echo_error("Sorry, repl.vim didn't support this filetype")
